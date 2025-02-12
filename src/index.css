@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-flaemische: "Flaemische", "serif"; 
+  --font-ztformom: "ZTFormom", "serif"; 
+
+  --text-10xl: 10rem; 
+  --text-11xl: 12rem; 
+
+  --color-blackish: #1a1a1a;
+  --color-coquette: #e9d5db;
+  --color-debauche: #deb4c1;
+}
+
+@font-face {
+  font-family: "Flaemische";
+  src: url("./assets/fonts/flaemische/FlaemischeKanzleischrift.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZTFormom";
+  src: url("./assets/fonts/ztformom/ZTFormom.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZTFormom";
+  src: url("./assets/fonts/ztformom/ZTFormomItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.cursive-title {
+  @apply font-flaemische text-11xl;
+}
+
+.cursive-h3 {
+  @apply font-flaemische text-5xl;
+}
+
+h1 {
+  @apply text-10xl leading-28;
+}
+
+h2 {
+  @apply text-5xl;
+}
+
+h3 {
+  @apply text-4xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+.subtitle {
+  @apply text-xl;
+}
+
+.deffont {
+  @apply font-ztformom text-blackish tracking-tight;
+}
+
+body { 
+  @apply bg-[url(./assets/decor/grain.gif)] bg-repeat bg-cover overflow-x-hidden;
+}
+
+.flex-between {
+  @apply flex justify-between;
+}
+
+.text-just {
+  @apply text-justify;
+}
+
+.italic {
+  @apply italic;
+}
+
+.text-right {
+  @apply text-right;
+}
+
+.half-col {
+  @apply w-full md:w-1/2;
+}
+
+.deffont {
+  @apply font-ztformom text-blackish tracking-tight;
+}
