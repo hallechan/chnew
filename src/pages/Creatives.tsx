@@ -3,7 +3,7 @@ function Creatives() {
     <>
       <div className="m-16 mt-8 mb-24 flex items-center gap-8">
         <div className="relative w-1/2">
-          <img className="absolute z-[-1]" src="src/assets/graffitis/create.png"/>
+          <img className="absolute z-[-1]" src="/assets/graffitis/create.png"/>
           <h1>
             <span className="cursive-title">C</span>reate.<br/>
           </h1>
@@ -16,26 +16,26 @@ function Creatives() {
       </div>
 
       <div className="bg-coquette p-12 relative">
-        <img className="absolute z-0 m-2 w-1/10" src="src/assets/decor/planet.png"/>
+        <img className="absolute z-0 m-2 w-1/10" src="/assets/decor/planet.png"/>
         <h3><span className="cursive-h3">D</span>esign!</h3>
         <div className="grid grid-cols-3 gap-8 mt-8">
           <div className="transform rotate-6">
-            <img src="src/assets/design/notes.png"/>
+            <img src="/assets/design/notes.png"/>
           </div>
           <div className="transform -rotate-3">
-            <img src="src/assets/design/anora.png"/>
+            <img src="/assets/design/anora.png"/>
           </div>
           <div className="transform rotate-2">
-            <img src="src/assets/design/payme.png"/>
+            <img src="/assets/design/payme.png"/>
           </div>
           <div className="transform rotate-12">
-            <img src="src/assets/design/kurokuri.png"/>
+            <img src="/assets/design/kurokuri.png"/>
           </div>
           <div className="transform -rotate-6">
-            <img src="src/assets/design/kitchen.png"/>
+            <img src="/assets/design/kitchen.png"/>
           </div>
           <div className="transform rotate-3">
-            <img src="src/assets/design/internals.png"/>
+            <img src="/assets/design/internals.png"/>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Creatives() {
     </div>
   </div>
   <div className="relative">
-    <img className="w-full" src="src/assets/decor/top.png" />
+    <img className="w-full" src="/assets/decor/top.png" />
     <div className="absolute top-1/4 left-1/12 transform -translate-y-1/2 text-center opacity-20">
       <h4 className="text-lg">nothing yet...</h4>
     </div>
