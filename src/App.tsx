@@ -1,5 +1,6 @@
 import Navigate from "./Navigate"
 import Footer from "./Footer"
+import { Analytics } from '@vercel/analytics/next';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
     <div className="marble deffont">
       <Navigate/>
       <Footer/>
+      <Analytics/>
     </div>   
     </>
   )
