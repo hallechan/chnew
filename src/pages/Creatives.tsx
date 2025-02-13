@@ -20,7 +20,7 @@ function Creatives() {
         <h3><span className="cursive-h3">D</span>esign!</h3>
         <div className="grid grid-cols-3 gap-8 mt-8">
           <div className="transform rotate-6">
-            <img src="/assets/design/notes.png"/>
+            <img src="/assets/design/moneybags.png"/>
           </div>
           <div className="transform -rotate-3">
             <img src="/assets/design/anora.png"/>
