@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react";
 
-function Creatives() {
-  const [selectedDesign, setSelectedDesign] = useState(null);
+interface Design {
+  title: string;
+  src: string;
+  transform: string;
+  description: string;
+}
 
-  const designs = [
+function Creatives() {
+  const [selectedDesign, setSelectedDesign] = useState<Design | null>(null);
+
+  const designs: Design[] = [
     {
       title: "moneybags",
       src: "/assets/design/moneybags.png",
@@ -17,13 +24,13 @@ function Creatives() {
       description: "i always feel better after acrylic nails :3"
     },
     {
-      title: "pay me!",
+      title: "payme",
       src: "/assets/design/payme.png",
       transform: "rotate-2",
       description: "after i received a 4-hour 'take-home' assignment for an unpaid internship application..."
     },
     {
-      title: "mpdgs",
+      title: "kurokuri",
       src: "/assets/design/kurokuri.png",
       transform: "rotate-12",
       description: "two posters for summers, lucies & kaoris"
@@ -73,7 +80,7 @@ function Creatives() {
         <img className="absolute z-0 m-2 w-1/10" src="/assets/decor/planet.png" />
         <div className="flex justify-between items-center">
           <h3><span className="cursive-h3">D</span>esign!</h3>
-          <h4 className="text-sm text-blackish italic">click each design! ♡(｡- ω -)</h4>
+          <h4 className="text-sm text-blackish/70 italic">click each design! ♡(｡- ω -)</h4>
         </div>
         <div className="grid grid-cols-3 gap-8 mt-8">
           {designs.map((item, index) => (
