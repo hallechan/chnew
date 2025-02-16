@@ -1,9 +1,63 @@
+import { useState, useEffect } from "react";
+
 function Creatives() {
+  const [selectedDesign, setSelectedDesign] = useState(null);
+
+  const designs = [
+    {
+      title: "moneybags",
+      src: "/assets/design/moneybags.png",
+      transform: "rotate-6",
+      description: "an ode to wealth, or perhaps a commentary?"
+    },
+    {
+      title: "goodnails",
+      src: "/assets/design/goodnails.png",
+      transform: "-rotate-3",
+      description: "i always feel better after acrylic nails :3"
+    },
+    {
+      title: "pay me!",
+      src: "/assets/design/payme.png",
+      transform: "rotate-2",
+      description: "after i received a 4-hour 'take-home' assignment for an unpaid internship application..."
+    },
+    {
+      title: "mpdgs",
+      src: "/assets/design/kurokuri.png",
+      transform: "rotate-12",
+      description: "two posters for summers, lucies & kaoris"
+    },
+    {
+      title: "kitchen",
+      src: "/assets/design/kitchen.png",
+      transform: "-rotate-6",
+      description: "one of 3 housework posters; chore dissociation"
+    },
+    {
+      title: "internals",
+      src: "/assets/design/internals.png",
+      transform: "rotate-3",
+      description: "for csa w25 :3"
+    },
+  ];
+
+  useEffect(() => {
+    if (selectedDesign) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedDesign]);
+
   return (
-    <>
+    <div className="relative z-0">
       <div className="m-16 mt-8 mb-24 flex items-center gap-8">
         <div className="relative w-1/2">
-          <img className="absolute z-[-1]" src="/assets/graffitis/create.png"/>
+          <img className="absolute z-[-1]" src="/assets/graffitis/create.png" />
           <h1>
             <span className="cursive-title">C</span>reate.<br/>
           </h1>
@@ -16,48 +70,63 @@ function Creatives() {
       </div>
 
       <div className="bg-coquette p-12 relative">
-        <img className="absolute z-0 m-2 w-1/10" src="/assets/decor/planet.png"/>
-        <h3><span className="cursive-h3">D</span>esign!</h3>
+        <img className="absolute z-0 m-2 w-1/10" src="/assets/decor/planet.png" />
+        <div className="flex justify-between items-center">
+          <h3><span className="cursive-h3">D</span>esign!</h3>
+          <h4 className="text-sm text-blackish italic">click each design! ♡(｡- ω -)</h4>
+        </div>
         <div className="grid grid-cols-3 gap-8 mt-8">
-          <div className="transform rotate-6">
-            <img src="/assets/design/moneybags.png"/>
-          </div>
-          <div className="transform -rotate-3">
-            <img src="/assets/design/anora.png"/>
-          </div>
-          <div className="transform rotate-2">
-            <img src="/assets/design/payme.png"/>
-          </div>
-          <div className="transform rotate-12">
-            <img src="/assets/design/kurokuri.png"/>
-          </div>
-          <div className="transform -rotate-6">
-            <img src="/assets/design/kitchen.png"/>
-          </div>
-          <div className="transform rotate-3">
-            <img src="/assets/design/internals.png"/>
-          </div>
+          {designs.map((item, index) => (
+            <div
+              key={index}
+              className={`transform ${item.transform} cursor-pointer`}
+              onClick={() => setSelectedDesign(item)}
+            >
+              <img src={item.src} alt={item.title}/>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className="p-12 relative">
-  <div className="flex justify-between my-16 items-end">
-    <h3><span className="cursive-h3">W</span>ritings.</h3>
-    <div>
-      <h4 className="pb-2 text-justify">
-        writing is my life’s love. occasionally, i put them here for anyone to read and (hopefully) enjoy.
-      </h4>
-    </div>
-  </div>
-  <div className="relative">
-    <img className="w-full" src="/assets/decor/top.png" />
-    <div className="absolute top-1/4 left-1/12 transform -translate-y-1/2 text-center opacity-20">
-      <h4 className="text-lg">nothing yet...</h4>
-    </div>
-  </div>
-</div>
+        <div className="flex justify-between my-16 items-end">
+          <h3><span className="cursive-h3">W</span>ritings.</h3>
+          <div>
+            <h4 className="pb-2 text-justify">
+              writing is my life’s love. occasionally, i put them here for anyone to read and (hopefully) enjoy.
+            </h4>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="w-full" src="/assets/decor/top.png" />
+          <div className="absolute top-1/4 left-1/12 transform -translate-y-1/2 text-center opacity-20">
+            <h4 className="text-lg">nothing yet...</h4>
+          </div>
+        </div>
+      </div>
 
-    </>
+      {selectedDesign && (
+        <div
+          className="fixed inset-0 backdrop-blur bg-blackish/25 z-50 flex items-start justify-center pt-10"
+          onClick={() => setSelectedDesign(null)}
+        >
+          <div
+            className="relative bg-white/10 bg-cover p-8 max-w-md w-full shadow-lg text-center max-h-[90vh] overflow-auto"
+            onClick={(e) => e.stopPropagation()} 
+          >
+            <button
+              className="absolute top-4 right-4 text-blackish cursor-pointer"
+              onClick={() => setSelectedDesign(null)}
+            >
+              X
+            </button>
+            <img className="mx-auto w-4/5 mb-4" src={selectedDesign.src} alt={selectedDesign.title}/>
+            <h2 className="text-2xl mb-2">{selectedDesign.title}</h2>
+            <p>{selectedDesign.description}</p>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
