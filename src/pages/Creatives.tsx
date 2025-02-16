@@ -80,7 +80,7 @@ function Creatives() {
         <img className="absolute z-0 m-2 w-1/10" src="/assets/decor/planet.png" />
         <div className="flex justify-between items-center">
           <h3><span className="cursive-h3">D</span>esign!</h3>
-          <h4 className="text-sm text-blackish/70 italic">click each design! ♡(｡- ω -)</h4>
+          <h4 className="text-sm text-blackish italic">click each design! ♡(｡- ω -)</h4>
         </div>
         <div className="grid grid-cols-3 gap-8 mt-8">
           {designs.map((item, index) => (
