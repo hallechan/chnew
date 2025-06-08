@@ -23,7 +23,7 @@ function About() {
             </h4>
             <br /><br />
             <h4>
-              besides career stuff—i play Valerie in Cyberpunk 2077, listen to Suki Waterhouse, and barely get thru pilates.
+              besides career stuff—i play Valerie in Cyberpunk 2077, listen to Suki Waterhouse, and barely get through my 5ks.
             </h4>
           </div>
         </div>
