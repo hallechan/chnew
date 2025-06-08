@@ -17,7 +17,7 @@ function Home() {
           </div>
           <div className="flex justify-between my-16 mb-28">
             <h4 className="border-b-2">2a computer science @ uw</h4>
-            <h4 className="border-b-2">incoming swe @ shopify</h4>
+            <h4 className="border-b-2">swe @ shopify</h4>
           </div>
         </div>
         <div className="flex justify-center relative">
