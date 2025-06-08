@@ -107,21 +107,35 @@ function Creatives() {
         <div className="relative">
           <img className="w-full" src="/assets/decor/top.png" />
           <div className="absolute top-1/4 left-1/12 transform -translate-y-1/2 text-center">
-  <h4 className="text-lg">
-    <a
-      href="https://docs.google.com/document/d/1eN27j1VrArYUpIT7L5iibPQ3xWL_XjZVpvgZpYlUabU/edit?usp=sharing"
-      className="text-debauche hover:text-blackish underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      audacious existentialism re:pantheon
-    </a>
-  </h4>
-</div>
-<div className="absolute top-1/4 right-1/12 transform -translate-y-1/2 text-center">
-          <h4 className="text-lg text-blackish">mon. feb 24</h4>
-        </div>
-
+            <h4 className="text-lg">
+              <a
+                href="https://docs.google.com/document/d/172cgDFHzkp5Q1aId4EmgkDHHcTcYCHG1Lg7Mc6888yU/edit?usp=sharing"
+                className="text-debauche hover:text-blackish underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                shackling obedience
+              </a>
+            </h4>
+          </div>
+          <div className="absolute top-1/4 right-1/12 transform -translate-y-1/2 text-center">
+            <h4 className="text-lg text-blackish">sun. jun 8</h4>
+          </div>
+          <div className="absolute top-3/4 left-1/12 transform -translate-y-1/2 text-center">
+            <h4 className="text-lg">
+              <a
+                href="https://docs.google.com/document/d/1eN27j1VrArYUpIT7L5iibPQ3xWL_XjZVpvgZpYlUabU/edit?usp=sharing"
+                className="text-debauche hover:text-blackish underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                audacious existentialism re:pantheon
+              </a>
+            </h4>
+          </div>
+          <div className="absolute top-3/4 right-1/12 transform -translate-y-1/2 text-center">
+            <h4 className="text-lg text-blackish">mon. feb 24</h4>
+          </div>
         </div>
       </div>
 
@@ -132,7 +146,7 @@ function Creatives() {
         >
           <div
             className="relative bg-white/10 bg-cover p-8 max-w-md w-full shadow-lg text-center max-h-[90vh] overflow-auto"
-            onClick={(e) => e.stopPropagation()} 
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute top-4 right-4 text-blackish cursor-pointer"
