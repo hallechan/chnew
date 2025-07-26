@@ -77,9 +77,11 @@ function Creatives() {
       </div>
 
       <div className="bg-coquette p-12 relative">
-        <img className="absolute z-0 m-2 w-1/10" src="/assets/decor/planet.png" />
         <div className="flex justify-between items-center">
-          <h3><span className="cursive-h3">D</span>esign!</h3>
+          <h3><span className="cursive-h3">D</span><span className="relative inline-block">
+            <img className="absolute z-[-1] w-[120%] h-[120%] -top-1 -left-1 md:-top-2 md:-left-2" src="/assets/decor/planet.png"/>
+            <span className="relative z-10 text-blackish">esign</span>
+          </span>!</h3>
           <h4 className="text-sm text-blackish italic">click each design! ♡(｡- ω -)</h4>
         </div>
         <div className="grid grid-cols-3 gap-8 mt-8">
@@ -100,41 +102,54 @@ function Creatives() {
           <h3><span className="cursive-h3">W</span>ritings.</h3>
           <div>
             <h4 className="pb-2 text-justify">
-              writing is my life’s love. occasionally, i put them here for anyone to read and (hopefully) enjoy.
+              i live to write about it. occasionally, i put them here for anyone to read and (hopefully) enjoy.
             </h4>
           </div>
         </div>
         <div className="relative">
           <img className="w-full" src="/assets/decor/top.png" />
-          <div className="absolute top-1/4 left-1/12 transform -translate-y-1/2 text-center">
-            <h4 className="text-lg">
-              <a
-                href="https://docs.google.com/document/d/172cgDFHzkp5Q1aId4EmgkDHHcTcYCHG1Lg7Mc6888yU/edit?usp=sharing"
-                className="text-debauche hover:text-blackish underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                shackling obedience
-              </a>
-            </h4>
-          </div>
-          <div className="absolute top-1/4 right-1/12 transform -translate-y-1/2 text-center">
-            <h4 className="text-lg text-blackish">sun. jun 8</h4>
-          </div>
-          <div className="absolute top-3/4 left-1/12 transform -translate-y-1/2 text-center">
-            <h4 className="text-lg">
-              <a
-                href="https://docs.google.com/document/d/1eN27j1VrArYUpIT7L5iibPQ3xWL_XjZVpvgZpYlUabU/edit?usp=sharing"
-                className="text-debauche hover:text-blackish underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                audacious existentialism re:pantheon
-              </a>
-            </h4>
-          </div>
-          <div className="absolute top-3/4 right-1/12 transform -translate-y-1/2 text-center">
-            <h4 className="text-lg text-blackish">mon. feb 24</h4>
+          <div className="absolute inset-0 flex flex-col justify-center p-8">
+            <ul className="space-y-6 w-4/5 self-center">
+            <li className="flex justify-between items-center">
+                 <h4 className="text-lg">
+                   <a
+                     href="https://docs.google.com/document/d/1GTztFcsxlKc-leyMKroQtVSn_ZG8tt191T9LABkVo04/edit?usp=sharing"
+                     className="text-debauche hover:text-blackish underline"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     ai & em dashes
+                   </a>
+                 </h4>
+                 <h4 className="text-lg text-blackish">tue. jul 8</h4>
+               </li>
+               <li className="flex justify-between items-center">
+                 <h4 className="text-lg">
+                   <a
+                     href="https://docs.google.com/document/d/172cgDFHzkp5Q1aId4EmgkDHHcTcYCHG1Lg7Mc6888yU/edit?usp=sharing"
+                     className="text-debauche hover:text-blackish underline"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     shackling disobedience
+                   </a>
+                 </h4>
+                 <h4 className="text-lg text-blackish">sun. jun 8</h4>
+               </li>
+               <li className="flex justify-between items-center">
+                 <h4 className="text-lg">
+                   <a
+                     href="https://docs.google.com/document/d/1eN27j1VrArYUpIT7L5iibPQ3xWL_XjZVpvgZpYlUabU/edit?usp=sharing"
+                     className="text-debauche hover:text-blackish underline"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     audacious existentialism re:pantheon
+                   </a>
+                 </h4>
+                 <h4 className="text-lg text-blackish">mon. feb 24</h4>
+               </li>
+             </ul>
           </div>
         </div>
       </div>

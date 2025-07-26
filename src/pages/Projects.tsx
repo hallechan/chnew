@@ -2,9 +2,11 @@ function Projects() {
     return (
       <>
         <div className="bg-coquette p-12 relative">
-          <img className="absolute z-0 m-2 w-1/8" src="/assets/decor/planet.png" />
           <h3>
-            <span className="cursive-h3">P</span>rojects!
+            <span className="cursive-h3">P</span><span className="relative inline-block">
+              <img className="absolute z-[-1] w-[120%] h-[120%] -top-1 -left-1 md:-top-2 md:-left-2" src="/assets/decor/planet.png"/>
+              <span className="relative z-10 text-blackish">roject</span>
+            </span>s!
           </h3>
           <a href="https://devpost.com/software/pitta-patta" target="_blank" rel="noreferrer">
             <div className="flex flex-col md:flex-row relative mt-10">
@@ -35,7 +37,7 @@ function Projects() {
                   <h4>realizing a computer vision-based virtual closet for a more sustainable future.</h4>
                   <div><br/>
                     <img className="w-1/2" src="/assets/logos/maevetext.png" />
-                    <h4>technova ‘24 2nd place overall + best streamlit</h4>
+                    <h4>technova '24 2nd place overall + best streamlit</h4>
                   </div>
                 </div>
               </div>
