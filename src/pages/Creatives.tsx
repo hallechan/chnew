@@ -113,6 +113,19 @@ function Creatives() {
             <li className="flex justify-between items-center">
                  <h4 className="text-lg">
                    <a
+                     href="https://docs.google.com/document/d/1-3jC0WJGsHflKPQXWmvxS5BAX3GdpRm4Gvze-D-aC6Y/edit?usp=sharing"
+                     className="text-debauche hover:text-blackish underline"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     re:minecraft civilization (懐かしい)
+                   </a>
+                 </h4>
+                 <h4 className="text-lg text-blackish">thu. nov 27</h4>
+               </li>
+            <li className="flex justify-between items-center">
+                 <h4 className="text-lg">
+                   <a
                      href="https://docs.google.com/document/d/1GTztFcsxlKc-leyMKroQtVSn_ZG8tt191T9LABkVo04/edit?usp=sharing"
                      className="text-debauche hover:text-blackish underline"
                      target="_blank"
