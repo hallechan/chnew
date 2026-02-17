@@ -113,6 +113,19 @@ function Creatives() {
             <li className="flex justify-between items-center">
                  <h4 className="text-lg">
                    <a
+                     href="https://docs.google.com/document/d/19CmHvDDp-MUbAFkczS3MYy7mK0baMngkeIeI_onK3fg/edit?usp=sharing"
+                     className="text-debauche hover:text-blackish underline"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     litters to self-flourish (a commentary on manifestation & law of attraction)
+                   </a>
+                 </h4>
+                 <h4 className="text-lg text-blackish">tue. feb 17</h4>
+               </li>
+            <li className="flex justify-between items-center">
+                 <h4 className="text-lg">
+                   <a
                      href="https://docs.google.com/document/d/1-3jC0WJGsHflKPQXWmvxS5BAX3GdpRm4Gvze-D-aC6Y/edit?usp=sharing"
                      className="text-debauche hover:text-blackish underline"
                      target="_blank"
