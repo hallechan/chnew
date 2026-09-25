@@ -23,7 +23,7 @@ function About() {
             </h4>
             <br /><br />
             <h4>
-              besides career stuff—i'm a Dress to Impress top model, listen to Suki Waterhouse, and barely get through my 5ks.
+              besides career stuff—i have a Minecraft hardcore world, listen to Slayyyter and Ariana Grande, struggle with learning Japanese, and go on runs (but only when the moon is up!)
             </h4>
           </div>
         </div>
@@ -44,6 +44,16 @@ function About() {
               src="/assets/decor/bigpaper.png"
             />
             <div className="w-full md:w-3/4 relative left-0 md:left-1/4 z-10 p-4 -my-6 md:-my-12 flex flex-col gap-8 md:gap-16 text-just">
+              <div className="flex-between flex-col md:flex-row gap-2 md:gap-0">
+                <div className="text-center md:text-left">
+                  <h4>Essos</h4>
+                  <h4 className="italic">Software Engineer Intern</h4>
+                </div>
+                <div className="text-center md:text-right">
+                  <h4>Sep–Dec. 2026</h4>
+                  <h4>New York City, NY</h4>
+                </div>
+              </div>
               <div className="flex-between flex-col md:flex-row gap-2 md:gap-0">
                 <div className="text-center md:text-left">
                   <h4>Shopify</h4>

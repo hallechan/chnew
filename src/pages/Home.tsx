@@ -20,8 +20,8 @@ function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between my-8 md:my-16 mb-16 md:mb-28 gap-4 md:gap-0">
-            <h4 className="border-b-2 text-center md:text-left">3a computer science @ uw</h4>
-            <h4 className="border-b-2 text-center md:text-left">prev @ shopify</h4>
+            <h4 className="border-b-2 text-center md:text-left">4a computer science @ uw</h4>
+            <h4 className="border-b-2 text-center md:text-left">swe intern @ essos</h4>
           </div>
         </div>
         <div className="flex justify-center relative">

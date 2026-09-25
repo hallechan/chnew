@@ -110,7 +110,20 @@ function Creatives() {
           <img className="w-full" src="/assets/decor/top.png" />
           <div className="absolute inset-0 flex flex-col justify-center p-8">
             <ul className="space-y-6 w-4/5 self-center">
-            <li className="flex justify-between items-center">
+            <li className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 md:gap-4">
+                 <h4 className="text-lg">
+                   <a
+                     href="https://docs.google.com/document/d/1gyOTL04pMy6q9sj-w_fa0gdZ22k-ZPGp7SzmOxfVpSA/edit?usp=sharing"
+                     className="text-debauche hover:text-blackish underline"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     all the things i read & watched on the plane ride to tokyo
+                   </a>
+                 </h4>
+                 <h4 className="text-lg text-blackish">wed. apr 1 2026</h4>
+               </li>
+            <li className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 md:gap-4">
                  <h4 className="text-lg">
                    <a
                      href="https://docs.google.com/document/d/19CmHvDDp-MUbAFkczS3MYy7mK0baMngkeIeI_onK3fg/edit?usp=sharing"
@@ -121,9 +134,9 @@ function Creatives() {
                      litters to self-flourish (a commentary on manifestation & law of attraction)
                    </a>
                  </h4>
-                 <h4 className="text-lg text-blackish">tue. feb 17</h4>
+                 <h4 className="text-lg text-blackish">tue. feb 17 2026</h4>
                </li>
-            <li className="flex justify-between items-center">
+            <li className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 md:gap-4">
                  <h4 className="text-lg">
                    <a
                      href="https://docs.google.com/document/d/1-3jC0WJGsHflKPQXWmvxS5BAX3GdpRm4Gvze-D-aC6Y/edit?usp=sharing"
@@ -134,9 +147,9 @@ function Creatives() {
                      re:minecraft civilization (懐かしい)
                    </a>
                  </h4>
-                 <h4 className="text-lg text-blackish">thu. nov 27</h4>
+                 <h4 className="text-lg text-blackish">thu. nov 27 2025</h4>
                </li>
-            <li className="flex justify-between items-center">
+            <li className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 md:gap-4">
                  <h4 className="text-lg">
                    <a
                      href="https://docs.google.com/document/d/1GTztFcsxlKc-leyMKroQtVSn_ZG8tt191T9LABkVo04/edit?usp=sharing"
@@ -147,9 +160,9 @@ function Creatives() {
                      ai & em dashes
                    </a>
                  </h4>
-                 <h4 className="text-lg text-blackish">tue. jul 8</h4>
+                 <h4 className="text-lg text-blackish">tue. jul 8 2025</h4>
                </li>
-               <li className="flex justify-between items-center">
+               <li className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 md:gap-4">
                  <h4 className="text-lg">
                    <a
                      href="https://docs.google.com/document/d/172cgDFHzkp5Q1aId4EmgkDHHcTcYCHG1Lg7Mc6888yU/edit?usp=sharing"
@@ -160,9 +173,9 @@ function Creatives() {
                      shackling disobedience
                    </a>
                  </h4>
-                 <h4 className="text-lg text-blackish">sun. jun 8</h4>
+                 <h4 className="text-lg text-blackish">sun. jun 8 2025</h4>
                </li>
-               <li className="flex justify-between items-center">
+               <li className="flex flex-col md:flex-row justify-between items-start md:items-center gap-1 md:gap-4">
                  <h4 className="text-lg">
                    <a
                      href="https://docs.google.com/document/d/1eN27j1VrArYUpIT7L5iibPQ3xWL_XjZVpvgZpYlUabU/edit?usp=sharing"
@@ -173,7 +186,7 @@ function Creatives() {
                      audacious existentialism re:pantheon
                    </a>
                  </h4>
-                 <h4 className="text-lg text-blackish">mon. feb 24</h4>
+                 <h4 className="text-lg text-blackish">mon. feb 24 2025</h4>
                </li>
              </ul>
           </div>

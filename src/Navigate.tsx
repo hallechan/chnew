@@ -13,8 +13,6 @@ function Navigate() {
           <NavLink to="/about" className={({ isActive }) => (isActive ? 'underline' : '')}>about</NavLink>
           <span className="hidden md:inline">/</span>
           <NavLink to="/creatives" className={({ isActive }) => (isActive ? 'underline' : '')}>creatives</NavLink>
-          <span className="hidden md:inline">/</span>
-          <a target="_blank" href="https://drive.google.com/file/d/1zKbU-PUF634j93C1r45TKtg-WzNxVKwq/view?usp=sharing">cv</a>
         </div>
       </nav>
 
