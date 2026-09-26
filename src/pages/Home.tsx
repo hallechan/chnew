@@ -3,8 +3,8 @@ import Projects from "./Projects.tsx";
 function Home() {
     return (
       <>
-        <div className="mx-4 md:mx-16 -my-6 md:-my-12">
-          <img className="absolute w-96 z-[-1]" src="/assets/graffitis/hallechan.png"/>
+        <div className="home-hero mx-4 md:mx-16 -my-6 md:-my-12">
+          <img className="home-graffiti" src="/assets/graffitis/hallechan.png" alt="" aria-hidden="true" />
           <div className="flex flex-col md:flex-row">
             <h1 className="py-8 md:py-16 text-center md:text-left">
               <span className="cursive-title">H</span>alle<br/>
@@ -15,7 +15,7 @@ function Home() {
                 is a <span className="relative inline-block">
                   <img className="absolute z-[-1] w-[120%] h-[120%] -top-1 -left-1 md:-top-2 md:-left-2" src="/assets/decor/planet.png"/>
                   <span className="relative z-10 text-blackish">front-end</span>
-                </span> <span className="text-debauche">developer & designer</span>.
+                </span> <span className="text-debauche">& design engineer</span>.
               </h2>
             </div>
           </div>

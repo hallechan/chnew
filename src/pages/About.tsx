@@ -2,13 +2,13 @@ function About() {
   return (
     <>
       <div className="m-4 md:m-16 flex flex-col md:flex-row items-start gap-4 md:gap-8">
-        <div className="relative half-col">
-          <img className="absolute w-1/4 md:w-1/3 z-[-1]" src="/assets/graffitis/hi.png" />
+        <div className="about-title relative half-col">
+          <img className="about-graffiti" src="/assets/graffitis/hi.png" alt="" aria-hidden="true" />
           <h3 className="-my-4 md:-my-8 text-center md:text-left">i'm</h3>
           <h1 className="text-center md:text-left">
             <span className="cursive-title">H</span>alle.<br />
           </h1>
-          <img className="w-full md:w-xl mt-10 md:mt-20 -mx-10 md:-mx-20" src="/assets/photos/tvme.png" />
+          <img className="w-full md:w-xl mt-10 md:mt-20 md:-mx-20" src="/assets/photos/tvme.png" />
         </div>
         <div className="half-col">
           <div className="max-w-md text-just mx-auto md:mx-0">
@@ -40,8 +40,10 @@ function About() {
           </div>
           <div className="relative w-full md:w-2/3">
             <img
-              className="absolute -mt-16 md:-mt-32 left-1/2 -translate-x-1/2 md:-translate-x-1/3 z-0 w-3/4 md:w-auto"
+              className="experience-paper"
               src="/assets/decor/bigpaper.png"
+              alt=""
+              aria-hidden="true"
             />
             <div className="w-full md:w-3/4 relative left-0 md:left-1/4 z-10 p-4 -my-6 md:-my-12 flex flex-col gap-8 md:gap-16 text-just">
               <div className="flex-between flex-col md:flex-row gap-2 md:gap-0">
